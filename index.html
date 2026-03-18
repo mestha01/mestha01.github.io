@@ -3,53 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Meena Shrestha | Personal Website</title>
+  <meta name="description" content="Meena Shrestha personal website, research, projects, CV, and contact information." />
+  <meta name="keywords" content="Meena Shrestha, personal website, research, physics, scientist, CV" />
+  <meta name="author" content="Meena Shrestha" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Meena Shrestha",
+    "url": "https://mestha01.github.io",
+    "sameAs": [
+      "https://github.com/mestha01"
+    ]
+  }
+  </script>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background: #e8f5e9;
+      color: #1f2d1f;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #222;
+      background: linear-gradient(135deg, #1b5e20, #388e3c);
       color: white;
-      padding: 20px 0;
+      padding: 60px 20px 40px;
       text-align: center;
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin: 12px 0 20px;
+      font-size: 1.15rem;
+    }
+
     nav {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 12px;
-      font-size: 16px;
+      margin: 0 14px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
 
     section {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     }
 
-    h1, h2 {
+    h2 {
+      color: #1b5e20;
       margin-top: 0;
+      border-bottom: 2px solid #c8e6c9;
+      padding-bottom: 8px;
+    }
+
+    .hero-links a,
+    .contact-links a,
+    .cv-link {
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-links a:hover,
+    .contact-links a:hover,
+    .cv-link:hover {
+      text-decoration: underline;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project-card {
+      background: #f7fcf7;
+      border-left: 5px solid #43a047;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #2e7d32;
     }
 
     footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #222;
+      background: #1b5e20;
       color: white;
+      text-align: center;
+      padding: 18px;
       margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2.1rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
     }
   </style>
 </head>
@@ -57,50 +158,103 @@
 
   <header>
     <h1>Meena Shrestha</h1>
-    <p>Welcome to my personal website</p>
+    <p>Researcher | Scientist | Personal Website</p>
+    <div class="hero-links">
+      <a href="#about">About</a> |
+      <a href="#research">Research</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#cv">CV</a> |
+      <a href="#contact">Contact</a>
+    </div>
     <nav>
       <a href="#about">About</a>
+      <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I am Meena Shrestha. I am interested in research, science, and technology.
-      This website is where I share my background, projects, and contact information.
-    </p>
-  </section>
+  <div class="container">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here are some of my recent projects:</p>
-    <ul>
-      <li>Project 1 – Short description</li>
-      <li>Project 2 – Short description</li>
-      <li>Project 3 – Short description</li>
-    </ul>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am <strong>Meena Shrestha</strong>. Welcome to my personal website.
+        I am interested in research, science, and technology. This website highlights
+        my academic background, current work, projects, and professional information.
+      </p>
+      <p>
+        I created this website so that people searching for <strong>Meena Shrestha</strong>
+        can easily find my profile, research interests, and contact details.
+      </p>
+    </section>
 
-  <section id="cv">
-    <h2>CV</h2>
-    <p>
-      You can add a link to your CV here:
-      <a href="cv.pdf" target="_blank">Download my CV</a>
-    </p>
-  </section>
+    <section id="research">
+      <h2>Research Interests</h2>
+      <div class="two-column">
+        <div>
+          <ul>
+            <li>Physics and applied science</li>
+            <li>Computational modeling and simulation</li>
+            <li>Data analysis and visualization</li>
+            <li>Scientific computing</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Research communication</li>
+            <li>Technology-driven problem solving</li>
+            <li>Interdisciplinary scientific projects</li>
+            <li>Academic and professional development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-    <p>GitHub: <a href="#">Your GitHub</a></p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Write a short description of your project here. Mention what the project is about, what tools you used, and why it matters.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Add another project summary here. You can include research work, simulations, publications, or technical contributions.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Use this section to highlight a recent or important project that reflects your skills and interests.</p>
+      </div>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>
+        You can download my CV here:
+        <a class="cv-link" href="cv.pdf" target="_blank">Download CV</a>
+      </p>
+      <p>
+        You may also add publications, awards, presentations, or academic achievements in this section later.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+        <p>GitHub: <a href="https://github.com/mestha01" target="_blank">github.com/mestha01</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn profile here</a></p>
+      </div>
+    </section>
+
+  </div>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Meena Shrestha. All rights reserved.</p>
   </footer>
 
 </body>
