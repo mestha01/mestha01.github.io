@@ -1,101 +1,162 @@
-<style>
-  * {
-    box-sizing: border-box;
-  }
 
-  html {
-    scroll-behavior: smooth;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  body {
-    margin: 0;
+<header>
+    <nav>
+        <h1>Your Name</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <img src="assets/profile.jpg" alt="Profile Photo">
+    <h2>Dr. Your Name</h2>
+    <p>Assistant Professor | Researcher | Data Scientist</p>
+    <a href="assets/cv.pdf" class="btn">Download CV</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Brief introduction about your academic background, research interests,
+        and professional experience.
+    </p>
+</section>
+
+<section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Computational Biology</li>
+    </ul>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <ul>
+        <li>Author, A. (2025). Title of Paper. Journal Name.</li>
+        <li>Author, B. (2024). Another Paper Title. Conference.</li>
+    </ul>
+</section>
+
+<section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+        <li>Course Name – University (2025)</li>
+        <li>Another Course – University (2024)</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: <a href="#">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+body {
     font-family: Arial, sans-serif;
-    background: #E3F2FD;
-    color: #000000; 
-    line-height: 1.6;
-  }
-
-  header {
-    background: linear-gradient(135deg, #87CEEB, #66B2FF); /* sky blue */
-    color: #000000;
-    padding: 50px 20px 40px;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 15px;
-  }
-
-  header h1 {
     margin: 0;
-    font-size: 2.5rem;
-    color: #000000;
-  }
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
 
-  header p {
-    margin: 10px 0 20px;
-    font-size: 1.1rem;
-    color: #000000;
-  }
+header {
+    background: #002147;
+    color: white;
+    padding: 1rem 0;
+}
 
-  nav a {
-    color: #000000;
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-  }
+}
 
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  .container {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-
-  section {
-    background: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-
-  h2 {
-    color: #66B2FF; /* sky blue */
-    border-bottom: 2px solid #B3E5FC;
-    padding-bottom: 5px;
-  }
-
-  .project {
-    background: #E3F2FD;
-    padding: 15px;
-    border-left: 5px solid #66B2FF; /* sky blue */
-    margin-bottom: 10px;
-    border-radius: 8px;
-  }
-
-  a {
-    color: #000000;
-  }
-
-  footer {
-    background: #66B2FF; /* sky blue */
-    color: #000000;
+#hero {
     text-align: center;
-    padding: 15px;
-  }
+    padding: 50px 20px;
+    background: #e6ecf5;
+}
 
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2rem;
-    }
-  }
-</style>
+#hero img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #002147;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 10%;
+}
+
+h2 {
+    border-bottom: 2px solid #002147;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #002147;
+    color: white;
+}
+
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
