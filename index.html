@@ -1,209 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Meena Shrestha | Personal Website</title>
-  <meta name="description" content="Meena Shrestha personal website, research, projects, CV, and contact information." />
-  <meta name="keywords" content="Meena Shrestha, researcher, physics, scientist, personal website" />
-  <meta name="author" content="Meena Shrestha" />
-
-  <!-- Google SEO structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Meena Shrestha",
-    "url": "https://mestha01.github.io",
-    "sameAs": [
-      "https://github.com/mestha01"
-    ]
+<style>
+  * {
+    box-sizing: border-box;
   }
-  </script>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #E3F2FD;
+    color: #000000; 
+    line-height: 1.6;
+  }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #E3F2FD;
-      color: #66B2FF; 
-      line-height: 1.6;
-    }
+  header {
+    background: linear-gradient(135deg, #87CEEB, #66B2FF); /* sky blue */
+    color: #000000;
+    padding: 50px 20px 40px;
+    text-align: center;
+  }
 
-    header {
-      background: linear-gradient(135deg, #1b5e20, #388e3c);
-      color: white;
-      padding: 50px 20px 40px;
-      text-align: center;
-    }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 15px;
+  }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 15px;
-    }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #000000;
+  }
 
+  header p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+    color: #000000;
+  }
+
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  h2 {
+    color: #66B2FF; /* sky blue */
+    border-bottom: 2px solid #B3E5FC;
+    padding-bottom: 5px;
+  }
+
+  .project {
+    background: #E3F2FD;
+    padding: 15px;
+    border-left: 5px solid #66B2FF; /* sky blue */
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  footer {
+    background: #66B2FF; /* sky blue */
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
-
-    header p {
-      margin: 10px 0 20px;
-      font-size: 1.1rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: white;
-      margin-bottom: 25px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      color: #1b5e20;
-      border-bottom: 2px solid #c8e6c9;
-      padding-bottom: 5px;
-    }
-
-    .project {
-      background: #f7fcf7;
-      padding: 15px;
-      border-left: 5px solid #43a047;
-      margin-bottom: 10px;
-      border-radius: 8px;
-    }
-
-    a {
-      color: #1b5e20;
-    }
-
-    footer {
-      background: #1b5e20;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <!-- PROFILE IMAGE -->
-    <img src="profile.jpg" alt="Meena Shrestha" class="profile-pic">
-
-    <h1>Meena Shrestha</h1>
-    <p>Researcher | Scientist | Personal Website</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I am <strong>Meena Shrestha</strong>. I am interested in research,
-        science, and technology. This website showcases my work, background,
-        and professional activities.
-      </p>
-      <p>
-        If you searched for <strong>Meena Shrestha</strong>, you are in the right place.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Physics and applied science</li>
-        <li>Computational modeling</li>
-        <li>Data analysis</li>
-        <li>Scientific computing</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Short description of your project.</p>
-      </div>
-
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Short description of your project.</p>
-      </div>
-
-      <div class="project">
-        <h3>Project 3</h3>
-        <p>Short description of your project.</p>
-      </div>
-
-    </section>
-
-    <section id="cv">
-      <h2>Curriculum Vitae</h2>
-      <p>
-        <a href="cv.pdf" target="_blank">Download my CV</a>
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: sthmeena@email.com</p>
-      <p>GitHub: <a href="https://github.com/mestha01">github.com/mestha01</a></p>
-      <p>LinkedIn: <a href="#">Add your LinkedIn</a></p>
-    </section>
-
-  </div>
-
-  <footer>
-    <p>&copy; 2026 Meena Shrestha</p>
-  </footer>
-
-</body>
-</html>
+  }
+</style>
